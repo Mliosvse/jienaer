@@ -1,0 +1,150 @@
+//清除浮动
+.clearfix{
+  zoom: 1;
+}
+#app {
+  height: 100%;
+}
+
+.content {
+  min-height: 100%;
+  background-color: #fff;
+}
+.clearfix:after {
+  content: ".";
+  width: 0;
+  height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+  overflow: hidden;
+}
+//自定义toast样式
+.zyjToast{
+  z-index: 999;
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #ffffff;
+  background: rgba(0,0,0,.7);
+  border-radius: 10px;
+  font-size: 26px;
+  line-height: 36px;
+  text-align: center;
+  padding: 12px;
+}
+.mb100 {
+  padding-bottom: 100px !important;
+}
+//下拉刷新&上拉加载提示样式
+.scroll_relaodTip{
+  width: 100%;
+  height: 80px;
+  line-height: 80px;
+  position: absolute;
+  top: -80px;
+  left: 0;
+  color: #999;
+  text-align: center;
+}
+.scroll_relaodShowTip{
+  height: 80px;
+  line-height: 80px;
+  color: #999;
+  text-align: center;
+}
+.scroll_loadingTip {
+  line-height: 50px;
+  text-align: center;
+  padding-top: 10px;
+  color: #999;
+}
+//宣传活动Safari弹框样式
+.safari_d1_alert{
+  position: fixed;
+  z-index: 99;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0,0,0,0.5);
+  img{
+    width: 500px;
+    height: 480px;
+    position: absolute;
+    bottom: 30px;
+    left: 126px;
+  }
+}
+.alert_fixed{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: rgba(0,0,0,0.6);
+  img{
+    width: 50%;
+    height: auto;
+    position: absolute;
+    top: 32px;
+    right: 32px;
+  }
+}
+
+.loading-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 2010;
+  .spinner-loading {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, .5);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.mt {
+  margin-top: 18px;
+}
+//自定义vant 选择框样式
+.vantpickBox{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  background: rgba(0,0,0,.3);
+  .vantpick{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #333;
+  }
+}
+
+// 密码输入框动画
+@keyframes title { //密码输入框的头部
+  from { bottom: 0; }
+  to { bottom: 554px; }
+}
+@-webkit-keyframes title {
+  from { bottom: 0; }
+  to { bottom: 554px; }
+}
+@keyframes input { //密码输入框
+  from { bottom: 0; }
+  to { bottom: 450px; }
+}
+@-webkit-keyframes input {
+  from { bottom: 0; }
+  to { bottom: 450px; }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--<meta name="viewport" content="width=device-width,initial-scale=1.0">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link rel="apple-touch-icon" href="<%= BASE_URL %>icon.png"/>
+    <title>借哪儿</title>
+    <script type="text/javascript" src="//yun.tuisnake.com/h5-mami/log.js" id="send_log"></script>
+    <script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? " https://" : " http://");document.write(unescape("%3Cspan style='display:none;'id='cnzz_stat_icon_1275602384'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s96.cnzz.com/z_stat.php%3Fid%3D1275602384' type='text/javascript'%3E%3C/script%3E"));</script>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script>
+      var token = formatDateTime()+Math.random().toString(36).substr(2);
+      localStorage.setItem('blackBox', token);
+      function formatDateTime() {
+        var date = new Date();
+        var y = date.getFullYear();
+        var m = date.getMonth() + 1;
+        m = m < 10 ? ('0' + m) : m;
+        var d = date.getDate();
+        d = d < 10 ? ('0' + d) : d;
+        var h = date.getHours();
+        var minute = date.getMinutes();
+        var second = date.getSeconds();
+        return y +  m +  d +h +minute+second;
+      };
+    </script>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
